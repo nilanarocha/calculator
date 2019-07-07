@@ -34,22 +34,19 @@ $('.calculator-item').click(function () {
     if (digit === '+' || digit === '-' || digit === '*' || digit === '/') {
         operations.push(calculator);
         operations.push(digit);
-        $('#result').text(calculator + digit);
+        $('#result').text($('#result').text() + digit);
         calculator = '';
         return;
     }
 
-    let resultText = '';
     if (equalWasClicked) {
         $('#result').text('');
         equalWasClicked = false;
-    } else if (calculator === '') {
-        resultText = $('#result').text();
     }
 
     calculator += digit;
 
-    $('#result').text(resultText + calculator);
+    $('#result').text($('#result').text() + digit);
 });
 
 // WHEN USER WANT TO SEE THE RESULTS
