@@ -1,0 +1,53 @@
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+.calculator {
+    width: 340px;
+    height: auto;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.calculator-item {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 5px;
+    border: 3px solid #EAEAEA;
+    cursor: pointer;
+    background: #FFF;
+    transition: background .2s linear;
+    padding: 5px;
+}
+
+.equal {
+    box-sizing: border-box;
+    width: 320px;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 3%;
+    margin: 5px;
+    background: #FFF;
+    border: 3px solid #EAEAEA;
+    cursor: pointer;
+}
+
+.equal:hover, .calculator-item:hover {
+    background: #eaaa34;
+    transition: background .2s linear;
+}
+
+#result {
+    width: 340px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+}
